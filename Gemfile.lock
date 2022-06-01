@@ -104,6 +104,11 @@ GEM
     email_validator (2.2.3)
       activemodel
     erubi (1.10.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     ffi (1.15.5)
     ffi-compiler (1.0.1)
       ffi (>= 1.0.0)
@@ -131,6 +136,9 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
+    minitest-rails (7.0.0)
+      minitest (~> 5.10)
+      railties (~> 7.0.0)
     msgpack (1.5.2)
     net-imap (0.2.3)
       digest
@@ -192,7 +200,7 @@ GEM
       io-console (~> 0.5)
     rexml (3.2.5)
     rubyzip (2.3.2)
-    selenium-webdriver (4.2.0)
+    selenium-webdriver (4.2.1)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -241,8 +249,10 @@ DEPENDENCIES
   capybara
   clearance
   debug
+  factory_bot_rails
   importmap-rails
   jbuilder
+  minitest-rails
   pry
   puma (~> 5.0)
   rails (~> 7.0.3)
