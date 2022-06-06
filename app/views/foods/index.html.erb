@@ -1,0 +1,13 @@
+<h1>Foods</h1>
+<div class="foods">
+  <% @foods.each do |food| %>
+    <div class="food">
+      <h3><%= link_to food.name, food_path(food) %></h3>
+      <p><%= food.description %></p>
+      <ul class="food-actions">
+        <li><%= link_to "Edit", edit_food_path(food) %></li>
+        <li><%= link_to "Delete", food_path(food), data: {confirm: "Are you sure want to delete: #{food.name}?"}, method: :delete %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>
